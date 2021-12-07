@@ -16,9 +16,9 @@ namespace ConverterTest
         }
         [Test]
         public void TestMeterToKm()
-        {
-            var result = converter.MeterToKm(5200);
-            Assert.That(result, Is.EqualTo(5.2));
+        {          
+            Assert.That(converter.MeterToKm(5200), Is.EqualTo(5.2));
         }
+         
     }
 }
