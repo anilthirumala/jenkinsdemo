@@ -1,0 +1,14 @@
+image:  mcr.microsoft.com/dotnet/core/sdk
+stages:
+  - build
+  - test
+build:
+  stage: build
+  script:
+    - 'dotnet restore'
+    - 'dotnet build'
+test:
+  stage:  test
+  script:
+    - 'dotnet test ConverterTest/ConverterTest.csproj'
+    
